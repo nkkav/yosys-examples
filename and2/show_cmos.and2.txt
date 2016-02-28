@@ -1,0 +1,482 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012  Clifford Wolf <clifford@clifford.at>                  |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.3.0+608 (git sha1 6c1c1e9, i686-pc-mingw32-gcc 4.8.1 -Os)
+
+
+-- Executing script file `show_cmos.ys' --
+
+1. Executing Verilog-2005 frontend.
+Parsing Verilog input from `and2.v' to AST representation.
+Generating RTLIL representation for module `\and2'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_INIT pass (extract init attributes).
+
+3.4. Executing PROC_ARST pass (detect async resets in processes).
+
+3.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.6. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.7. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_CONST pass (perform const folding).
+
+4.2. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizier on module \and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \and2.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Replaced 0 DFF cells.
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+4.8. Executing OPT_CONST pass (perform const folding).
+
+4.9. Finished OPT passes. (There is nothing left to do.)
+
+5. Executing MEMORY pass.
+
+5.1. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+5.2. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+5.3. Executing MEMORY_SHARE pass (consolidating $memrc/$memwr cells).
+
+5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+5.5. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+5.6. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_CONST pass (perform const folding).
+
+6.2. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizier on module \and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \and2.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Replaced 0 DFF cells.
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+6.8. Executing OPT_CONST pass (perform const folding).
+
+6.9. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing FSM pass (extract and optimize FSM).
+
+7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_CONST pass (perform const folding).
+
+8.2. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizier on module \and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \and2.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Replaced 0 DFF cells.
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+8.8. Executing OPT_CONST pass (perform const folding).
+
+8.9. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend.
+Parsing Verilog input from `<techmap.v>' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_eq_eqx'.
+Generating RTLIL representation for module `\_90_ne_nex'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+Mapping and2.$and$and2.v:5$1 ($and) with simplemap.
+No more expansions possible.
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_CONST pass (perform const folding).
+
+10.2. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizier on module \and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \and2.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Replaced 0 DFF cells.
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+
+10.8. Executing OPT_CONST pass (perform const folding).
+
+10.9. Finished OPT passes. (There is nothing left to do.)
+
+11. Executing Liberty frontend.
+Imported 4 cell types from liberty file.
+
+12. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell DFF (pins=3, area=18.00) is a direct match for cell type _DFF_P_.
+  create mapping for $_DFF_N_ from mapping for $_DFF_P_.
+  final dff cell mappings:
+    DFF _DFF_N_ (.C(~C), .D( D), .Q( Q));
+    DFF _DFF_P_ (.C( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    unmapped dff cell: $_DFF_PN0_
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+Mapping DFF cells in module `\and2':
+
+13. Executing ABC pass (technology mapping using ABC).
+
+13.1. Extracting gate netlist of module `\and2' to `C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD/input.blif'..
+Extracted 1 gates and 3 wires to a netlist network with 2 inputs and 1 outputs.
+
+13.1.1. Executing ABC.
+Running ABC command: c:\COMPTO~1\YOSYS-~1.0_6\yosys-abc -s -f C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD/abc.script 2>&1
+ABC: ABC command line: "source C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD/abc.script".
+ABC: 
+ABC: + read_blif C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD/input.blif 
+ABC: 
+ABC: + read_lib -w e:\projects\yosys-examples\and2/cmos_cells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Warning: Templates are not defined.
+ABC: Libery parser cannot read "time_unit".  Assuming   time_unit : "1ns".
+ABC: Libery parser cannot read "capacitive_load_unit". Assuming   capacitive_load_unit(1, pf).
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFF".
+ABC: Library "demo" from "e:\projects\yosys-examples\and2/cmos_cells.lib" has 3 cells (1 skipped: 1 seq; 0 tri-state; 0 no func).  Time =     0.00 sec
+ABC: Memory =    0.00 MB. Time =     0.00 sec
+ABC: Warnings: genlib library reader cannot detect the buffer gate.
+ABC: Some parts of the supergate-based technology mapper may not work correctly.
+ABC: 
+ABC: + strash 
+ABC: 
+ABC: + scorr -v 
+ABC: Error: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: 
+ABC: + ifraig -v 
+ABC: SimWords = 32. Rounds = 4. Mem = 0.00 MB.  Classes: Beg = 0. End = 0.
+ABC: Proof = 0. Counter-example = 0. Fail = 0. FailReal = 0. Zero = 0.
+ABC: Final = 1. Miter = 1. Total = 1. Mux = 0. (Exor = 0.) SatVars = 0.
+ABC: AIG simulation   =     0.00 sec
+ABC: AIG traversal    =     0.00 sec
+ABC: SAT solving      =     0.00 sec
+ABC:     Unsat        =     0.00 sec
+ABC:     Sat          =     0.00 sec
+ABC:     Fail         =     0.00 sec
+ABC: Class refining   =     0.00 sec
+ABC: TOTAL RUNTIME    =     0.00 sec
+ABC: 
+ABC: + retime -v 
+ABC: 
+ABC: + strash 
+ABC: 
+ABC: + dch -vf 
+ABC: Starting:  netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Rewrite:   netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Refactor:  netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Balance:   netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: RewriteZ:  netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Starting:  netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Balance:   netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: RewriteZ:  netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: RefactorZ: netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Balance:   netlist         : pi =     2  po =     1  and =       1  lev =   1
+ABC: Parameters: Sim words = 8. Conf limit = 1000. SAT var max = 5000.
+ABC: AIG nodes : Total =      1. Dangling =      1. Main =      0. (  0.00 %)
+ABC: SAT solver: Vars = 1. Max cone = 0. Recycles = 0.
+ABC: SAT calls : All =      0. Unsat =      0. Sat =      0. Fail =      0.
+ABC: Choices   : Lits =      0. Reprs =     0. Equivs =     0. Choices =     0.
+ABC: Choicing runtime statistics:
+ABC: Sim init    =     0.00 sec (  0.00 %)
+ABC: Sim SAT     =     0.00 sec (  0.00 %)
+ABC: SAT solving =     0.00 sec (  0.00 %)
+ABC:   sat       =     0.00 sec (  0.00 %)
+ABC:   unsat     =     0.00 sec (  0.00 %)
+ABC:   undecided =     0.00 sec (  0.00 %)
+ABC: Choice      =     0.00 sec (  0.00 %)
+ABC: Other       =     0.00 sec (  0.00 %)
+ABC: TOTAL       =     0.00 sec (  0.00 %)
+ABC: Synthesis   =     0.00 sec
+ABC: STATS:  Ands:       1  ->       1.  Reprs:      0  ->      0.  Choices =      0.
+ABC: 
+ABC: + map -v 
+ABC: Converting "demo.genlib" into supergate library "demo.super".
+ABC: Maximum level: Original = 1. Reduced due to choices = 1.
+ABC: Choice stats:  Choice nodes = 0. Total choices = 0.
+ABC: Nodes =      3.  Total 5-feasible cuts =          1.  Per node = 0.3. Time =     0.00 sec
+ABC: Delay    : Delay =     0.00  Flow =         4.0  Area =        10.0   0.0 %   Time =     0.00 sec
+ABC: AreaFlow : Delay =     2.00  Flow =         4.0  Area =        10.0   0.0 %   Time =     0.00 sec
+ABC: Area     : Delay =     2.00  Flow =         0.0  Area =        10.0   0.0 %   Time =     0.00 sec
+ABC: Area     : Delay =     2.00  Flow =         0.0  Area =        10.0   0.0 %   Time =     0.00 sec
+ABC: Output  n2    : Delay = ( 2.00,  2.00)  POS
+ABC: Total runtime =     0.00 sec
+ABC: 
+ABC: + write_blif C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD/output.blif 
+
+13.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOR cells:        1
+ABC RESULTS:               NOT cells:        2
+ABC RESULTS:        internal signals:        0
+ABC RESULTS:           input signals:        2
+ABC RESULTS:          output signals:        1
+
+13.1.3. Removing temp directory `C:\Users\uop\AppData\Local\Temp\\yosys-abc-9PF3lD':
+
+13.2. Extracting gate netlist of module `\NOT' to `C:\Users\uop\AppData\Local\Temp\\yosys-abc-fXAVhZ/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+
+13.2.1. Removing temp directory `C:\Users\uop\AppData\Local\Temp\\yosys-abc-fXAVhZ':
+
+13.3. Extracting gate netlist of module `\NAND' to `C:\Users\uop\AppData\Local\Temp\\yosys-abc-AH97Yl/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+
+13.3.1. Removing temp directory `C:\Users\uop\AppData\Local\Temp\\yosys-abc-AH97Yl':
+
+13.4. Extracting gate netlist of module `\NOR' to `C:\Users\uop\AppData\Local\Temp\\yosys-abc-HK8Qfz/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+
+13.4.1. Removing temp directory `C:\Users\uop\AppData\Local\Temp\\yosys-abc-HK8Qfz':
+
+13.5. Extracting gate netlist of module `\DFF' to `C:\Users\uop\AppData\Local\Temp\\yosys-abc-lNHw6D/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+
+13.5.1. Removing temp directory `C:\Users\uop\AppData\Local\Temp\\yosys-abc-lNHw6D':
+
+14. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+15. Executing OPT pass (performing simple optimizations).
+
+15.1. Executing OPT_CONST pass (perform const folding).
+
+15.2. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Finding identical cells in module `\NOT'.
+Finding identical cells in module `\NAND'.
+Finding identical cells in module `\NOR'.
+Finding identical cells in module `\DFF'.
+Removed a total of 0 cells.
+
+15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizier on module \and2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizier on module \NOT..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizier on module \NAND..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizier on module \NOR..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizier on module \DFF..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \and2.
+  Optimizing cells in module \NOT.
+  Optimizing cells in module \NAND.
+  Optimizing cells in module \NOR.
+  Optimizing cells in module \DFF.
+Performed a total of 0 changes.
+
+15.5. Executing OPT_SHARE pass (detect identical cells).
+Finding identical cells in module `\and2'.
+Finding identical cells in module `\NOT'.
+Finding identical cells in module `\NAND'.
+Finding identical cells in module `\NOR'.
+Finding identical cells in module `\DFF'.
+Removed a total of 0 cells.
+
+15.6. Executing OPT_RMDFF pass (remove dff with constant values).
+Replaced 0 DFF cells.
+
+15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \and2..
+Finding unused cells or wires in module \NOT..
+Finding unused cells or wires in module \NAND..
+Finding unused cells or wires in module \NOR..
+Finding unused cells or wires in module \DFF..
+
+15.8. Executing OPT_CONST pass (perform const folding).
+
+15.9. Finished OPT passes. (There is nothing left to do.)
+
+16. Executing Verilog backend.
+Dumping module `\and2'.
+  renaming `$abc$53$n4' to `_0_'.
+  renaming `$abc$53$n5' to `_1_'.
+  renaming `$abc$53$auto$blifparse.cc:132:abc_parse_blif$54' to `_2_'.
+  renaming `$abc$53$auto$blifparse.cc:132:abc_parse_blif$55' to `_3_'.
+  renaming `$abc$53$auto$blifparse.cc:132:abc_parse_blif$56' to `_4_'.
+
+17. Executing ILANG backend.
+Output filename: and2_ilang.txt
+
+18. Generating Graphviz representation of design.
+
+18.1. Executing Verilog-2005 frontend.
+Parsing Verilog input from `and2_synth.v' to AST representation.
+Generating RTLIL representation for module `\and2'.
+Successfully finished Verilog frontend.
+
+18.2. Continuing show pass.
+Writing dot description to `./and2_cmos.dot'.
+Dumping module and2 to page 1.
+Skipping blackbox module NOT.
+Skipping blackbox module NAND.
+Skipping blackbox module NOR.
+Skipping blackbox module DFF.
+
+End of script. Logfile hash: 8e65419133
+Yosys 0.3.0+608 (git sha1 6c1c1e9, i686-pc-mingw32-gcc 4.8.1 -Os)
+Time spent: 2% 10x opt_share (0 sec), 2% 10x opt_const (0 sec), ...

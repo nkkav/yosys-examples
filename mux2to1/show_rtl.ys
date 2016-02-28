@@ -1,0 +1,9 @@
+# read design
+read_verilog mux2to1.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./mux2to1_rtl

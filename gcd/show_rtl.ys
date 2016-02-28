@@ -1,0 +1,9 @@
+# read design
+read_verilog gcd.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./gcd_rtl

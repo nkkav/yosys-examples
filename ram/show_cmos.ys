@@ -1,0 +1,29 @@
+# read design
+read_verilog ram.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# low-level synthesis
+techmap; opt
+
+# map to target architecture
+read_liberty -lib cmos_cells.lib
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+
+# split larger signals
+splitnets -ports; opt
+
+# cleanup
+clean
+
+# write synthesized design
+write_verilog ram_synth.v
+
+# write intermediate language
+write_ilang ram_ilang.txt
+
+# show
+show -format dot -lib ram_synth.v -prefix ./ram_cmos

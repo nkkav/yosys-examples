@@ -1,0 +1,29 @@
+# read design
+read_verilog rom16x8.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# low-level synthesis
+techmap; opt
+
+# map to target architecture
+read_liberty -lib cmos_cells.lib
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+
+# split larger signals
+splitnets -ports; opt
+
+# cleanup
+clean
+
+# write synthesized design
+write_verilog rom16x8_synth.v
+
+# write intermediate language
+write_ilang rom16x8_ilang.txt
+
+# show
+show -format dot -lib rom16x8_synth.v -prefix ./rom16x8_cmos

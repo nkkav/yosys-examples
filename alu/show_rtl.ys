@@ -1,0 +1,10 @@
+# read design
+read_verilog alu.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+#show
+show -format dot -prefix ./alu_rtl

@@ -1,0 +1,9 @@
+# read design
+read_verilog rom16x8.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./rom16x8_rtl

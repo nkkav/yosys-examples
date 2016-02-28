@@ -1,0 +1,9 @@
+# read design
+read_verilog ior2.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./ior2_rtl

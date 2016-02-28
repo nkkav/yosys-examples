@@ -1,0 +1,10 @@
+# read design
+read_verilog adder.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+#show
+show -format dot -prefix ./adder_rtl

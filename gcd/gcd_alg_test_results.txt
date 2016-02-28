@@ -1,0 +1,9 @@
+GCD OK: Number of cycles =           8
+GCD OK: Number of cycles =           9
+GCD OK: Number of cycles =          11
+GCD OK: Number of cycles =           4
+GCD OK: Number of cycles =          11
+GCD OK: Number of cycles =          53
+GCD OK: Number of cycles =           4
+GCD OK: Number of cycles =           3
+GCD algorithm test has passed

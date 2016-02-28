@@ -1,0 +1,9 @@
+# read design
+read_verilog mu0_behav.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./mu0_behav_rtl

@@ -1,0 +1,29 @@
+# read design
+read_verilog car_speed_cntl.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# low-level synthesis
+techmap; opt
+
+# map to target architecture
+read_liberty -lib cmos_cells.lib
+dfflibmap -liberty cmos_cells.lib
+abc -liberty cmos_cells.lib
+
+# split larger signals
+splitnets -ports; opt
+
+# cleanup
+clean
+
+# write synthesized design
+write_verilog car_speed_cntl_synth.v
+
+# write intermediate language
+write_ilang car_speed_cntl_ilang.txt
+
+# show
+show -format dot -lib car_speed_cntl_synth.v -prefix ./car_speed_cntl_cmos

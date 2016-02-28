@@ -1,0 +1,11 @@
+# read design
+read_verilog countbits.v
+#read_verilog countbits_opt.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+#show -format dot -prefix ./countbits
+show -format dot -prefix ./countbits_opt

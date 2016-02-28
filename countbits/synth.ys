@@ -1,0 +1,41 @@
+# read design
+#read_verilog countbits.v
+read_verilog countbits_opt.v
+
+# check design hierarchy
+#hierarchy
+# translate processes (always blocks)
+#proc; opt
+# detect and optimize FSM encodings
+#fsm; opt
+# implement memories (arrays)
+#memory; opt
+# mapping to internal cell library
+#techmap; opt
+
+# the high-level stuff
+hierarchy
+synth -run coarse
+
+# mapping to internal cells
+techmap; opt -fast
+# mapping flip-flops to cmos_cells.lib
+dfflibmap -liberty cmos_cells.lib
+# mapping logic to cmos_cells.lib
+abc -liberty cmos_cells.lib
+# mapping flip-flops to osu018_stdcells.lib
+#dfflibmap -liberty osu018_stdcells.lib
+# mapping logic to osu018_stdcells.lib
+#abc -liberty osu018_stdcells.lib
+# cleanup
+clean
+
+# write synthesized design
+# FIXME: Hangs!
+#write_verilog countbits_synth.v
+
+# write intermediate language
+write_ilang countbits_ilang.txt
+
+# show
+#show -format dot -lib countbits_synth.v -prefix ./countbits_cells

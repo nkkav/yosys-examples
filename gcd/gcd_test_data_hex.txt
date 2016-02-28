@@ -1,0 +1,8 @@
+15 31 07 // Decimal:  21  49  7
+19 1E 05 // Decimal:  25  30  5
+13 1B 01 // Decimal:  19  27  1 
+28 28 28 // Decimal:  40  40 40
+FA 6E 0A // Decimal: 250 190 10 
+05 FA 05 // Decimal:   5 250  5
+01 01 01 // Decimal:   1   1  1
+00 00 00 // Decimal:   0   0  0

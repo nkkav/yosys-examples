@@ -1,0 +1,161 @@
+$VAR1 = {
+          'mu0' => {
+                     'architecture' => 'translated',
+                     'cnt' => 0,
+                     'entity' => 'mu0',
+                     'generics' => {
+                                     'LDA' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '2',
+                                                '-text' => ' LDA                            :  std_logic_vector(3 DOWNTO 0) := "0000";    
+',
+                                                '-val' => 'LDA'
+                                              },
+                                     'JNE' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '8',
+                                                '-text' => ' JNE                            :  std_logic_vector(3 DOWNTO 0) := "0110";    
+',
+                                                '-val' => 'JNE'
+                                              },
+                                     'ADD' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '4',
+                                                '-text' => ' ADD                            :  std_logic_vector(3 DOWNTO 0) := "0010";    
+',
+                                                '-val' => 'ADD'
+                                              },
+                                     'MAXWIDTH' => {
+                                                     '-size' => '',
+                                                     '-type' => 'integer',
+                                                     '-count' => undef,
+                                                     '-text' => ' MAXWIDTH                       :  integer := 16;    
+',
+                                                     '-val' => 'MAXWIDTH'
+                                                   },
+                                     'JGE' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '7',
+                                                '-text' => ' JGE                            :  std_logic_vector(3 DOWNTO 0) := "0101";    
+',
+                                                '-val' => 'JGE'
+                                              },
+                                     'STO' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '3',
+                                                '-text' => ' STO                            :  std_logic_vector(3 DOWNTO 0) := "0001";    
+',
+                                                '-val' => 'STO'
+                                              },
+                                     'STP' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '9',
+                                                '-text' => ' STP                            :  std_logic_vector(3 DOWNTO 0) := "0111";    
+',
+                                                '-val' => 'STP'
+                                              },
+                                     'MAXDEPTH' => {
+                                                     '-size' => '',
+                                                     '-type' => 'integer',
+                                                     '-count' => '1',
+                                                     '-text' => ' MAXDEPTH                       :  integer := 12;    
+',
+                                                     '-val' => 'MAXDEPTH'
+                                                   },
+                                     'SUB' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '5',
+                                                '-text' => ' SUB                            :  std_logic_vector(3 DOWNTO 0) := "0011";    
+',
+                                                '-val' => 'SUB'
+                                              },
+                                     'JMP' => {
+                                                '-size' => '4',
+                                                '-type' => 'default',
+                                                '-count' => '6',
+                                                '-text' => ' JMP                            :  std_logic_vector(3 DOWNTO 0) := "0100";    
+',
+                                                '-val' => 'JMP'
+                                              }
+                                   },
+                     'io' => [
+                               {
+                                 '-size' => 1,
+                                 '-type' => 'default',
+                                 '-comment' => '
+',
+                                 '-value' => undef,
+                                 '-port' => 'input',
+                                 '-name' => 'clk',
+                                 '-range' => undef,
+                                 '-class' => undef,
+                                 '-ccomment' => '',
+                                 '-local' => 1,
+                                 '-val' => 'clk'
+                               },
+                               {
+                                 '-size' => 1,
+                                 '-type' => 'default',
+                                 '-comment' => '
+',
+                                 '-value' => undef,
+                                 '-port' => 'input',
+                                 '-name' => 'reset',
+                                 '-range' => undef,
+                                 '-class' => undef,
+                                 '-ccomment' => '',
+                                 '-local' => 1,
+                                 '-val' => 'reset'
+                               },
+                               {
+                                 '-size' => '16',
+                                 '-type' => 'default',
+                                 '-comment' => '
+',
+                                 '-value' => undef,
+                                 '-port' => 'output',
+                                 '-name' => 'pc',
+                                 '-range' => '(MAXWIDTH - 1 DOWNTO 0)',
+                                 '-class' => undef,
+                                 '-ccomment' => '',
+                                 '-local' => 1,
+                                 '-val' => 'pc'
+                               },
+                               {
+                                 '-size' => '16',
+                                 '-type' => 'default',
+                                 '-comment' => '
+',
+                                 '-value' => undef,
+                                 '-port' => 'output',
+                                 '-name' => 'ir',
+                                 '-range' => '(MAXWIDTH - 1 DOWNTO 0)',
+                                 '-class' => undef,
+                                 '-ccomment' => '',
+                                 '-local' => 1,
+                                 '-val' => 'ir'
+                               },
+                               {
+                                 '-size' => '16',
+                                 '-type' => 'default',
+                                 '-comment' => '
+',
+                                 '-value' => undef,
+                                 '-port' => 'output',
+                                 '-name' => 'acc',
+                                 '-range' => '(MAXWIDTH - 1 DOWNTO 0)',
+                                 '-class' => undef,
+                                 '-ccomment' => '',
+                                 '-local' => 1,
+                                 '-val' => 'acc'
+                               }
+                             ]
+                   }
+        };

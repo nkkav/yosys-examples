@@ -1,0 +1,9 @@
+# read design
+read_verilog register.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./register_rtl

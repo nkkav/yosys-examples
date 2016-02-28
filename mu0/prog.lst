@@ -1,0 +1,7 @@
+0004 // load (LDA) the contents of memory adddress 4 into the ACC
+2005 // add (ADD) the contents of memory address 5 to that in the ACC
+1006 // store (STO) the contents of the ACC in memory location 6
+7000 // STOP
+000A // data stored in memory location 4
+0001 // data stored in memory location 5
+0000 // data stored in memory location 6

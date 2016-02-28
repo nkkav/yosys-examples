@@ -1,0 +1,9 @@
+# read design
+read_verilog xor2.v
+hierarchy -check
+
+# high-level synthesis
+proc; opt; memory; opt; fsm; opt
+
+# show
+show -format dot -prefix ./xor2_rtl
