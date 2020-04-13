@@ -6,4 +6,4 @@
 ##########################################################################
 
 export IVERILOG_PATH=/usr/bin
-export YOSYS_PATH=/home/nkkav/software/yosys-yosys-0.6
+export YOSYS_PATH=/usr/bin

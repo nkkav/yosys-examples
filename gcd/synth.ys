@@ -19,9 +19,9 @@ synth -run coarse
 # mapping to internal cells
 techmap; opt -fast
 # mapping flip-flops to osu018_stdcells.lib
-dfflibmap -liberty osu018_stdcells.lib
+dfflibmap -liberty ../libs/osu018_stdcells.lib
 # mapping logic to osu018_stdcells.lib
-abc -liberty osu018_stdcells.lib
+abc -liberty ../libs/osu018_stdcells.lib
 # cleanup
 clean
 

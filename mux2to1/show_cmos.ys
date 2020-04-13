@@ -9,9 +9,9 @@ proc; opt; memory; opt; fsm; opt
 techmap; opt
 
 # map to target architecture
-read_liberty -lib cmos_cells.lib
-dfflibmap -liberty cmos_cells.lib
-abc -liberty cmos_cells.lib
+read_liberty -lib ../libs/cmos_cells.lib
+dfflibmap -liberty ../libs/cmos_cells.lib
+abc -liberty ../libs/cmos_cells.lib
 
 # split larger signals
 splitnets -ports; opt

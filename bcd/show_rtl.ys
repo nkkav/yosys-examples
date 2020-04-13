@@ -6,5 +6,4 @@ hierarchy -check
 proc; opt; memory; opt; fsm; opt
 
 # show
-#show
 show -format dot -prefix ./bcd_rtl

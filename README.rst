@@ -16,11 +16,16 @@
 +-------------------+----------------------------------------------------------+
 | **Website**       | http://www.nkavvadias.com                                |
 +-------------------+----------------------------------------------------------+
-| **Release Date**  | 28 February 2016                                         |
+| **Release Date**  | 13 April 2020                                            |
 +-------------------+----------------------------------------------------------+
-| **Version**       | 0.0.1                                                    |
+| **Version**       | 0.0.2                                                    |
 +-------------------+----------------------------------------------------------+
 | **Rev. history**  |                                                          |
++-------------------+----------------------------------------------------------+
+|        **v0.0.2** | 2020-04-13                                               |
+|                   |                                                          |
+|                   | Update for yosys-0.7 and iverilog-0.10. Avoid            |
+|                   | duplication of the cell library.                         |
 +-------------------+----------------------------------------------------------+
 |        **v0.0.1** | 2016-02-28                                               |
 |                   |                                                          |
@@ -32,8 +37,9 @@
 ---------------
 
 This is a collection of Verilog (mostly) projects. Icarus Verilog 
-(http://iverilog.icarus.com) is used for simulation and YOSYS (0.4 
-and 0.6 tested) from http://clifford.at/yosys/ for logic synthesis.
+(http://iverilog.icarus.com) is used for simulation and YOSYS (0.10 
+and 0.7 tested, respectively) from http://clifford.at/yosys/ for logic
+synthesis.
 
 2. Setup
 --------

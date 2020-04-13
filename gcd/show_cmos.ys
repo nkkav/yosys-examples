@@ -12,9 +12,9 @@ techmap; opt
 #read_liberty -lib cmos_cells.lib
 #dfflibmap -liberty cmos_cells.lib
 #abc -liberty cmos_cells.lib
-read_liberty -lib osu018_stdcells.lib
-dfflibmap -liberty osu018_stdcells.lib
-abc -liberty osu018_stdcells.lib
+read_liberty -lib ../libs/osu018_stdcells.lib
+dfflibmap -liberty ../libs/osu018_stdcells.lib
+abc -liberty ../libs/osu018_stdcells.lib
 
 # split larger signals
 splitnets -ports; opt
