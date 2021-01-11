@@ -10,9 +10,7 @@
 |                   |                                                          |
 |                   | ``countbits`` example based on work by Guy Eschemann     |
 +-------------------+----------------------------------------------------------+
-| **Contact**       | nikos@nkavvadias.com                                     |
-|                   |                                                          |
-|                   | nikolaos.kavvadias@gmail.com                             |
+| **Contact**       | nikolaos.kavvadias@gmail.com                             |
 +-------------------+----------------------------------------------------------+
 | **Website**       | http://www.nkavvadias.com                                |
 +-------------------+----------------------------------------------------------+
@@ -60,4 +58,3 @@ To run the simulation and the logic synthesis process for the supplied
 benchmarks, use the ``run.sh`` script from the top-level directory::
 
   $ ./run.sh
-
